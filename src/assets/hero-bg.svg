@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800" fill="none">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1920" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#050a14"/>
+      <stop offset="0.55" stop-color="#081226"/>
+      <stop offset="1" stop-color="#0a1130"/>
+    </linearGradient>
+    <radialGradient id="cyan" cx="0.72" cy="0.22" r="0.5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet" cx="0.9" cy="0.85" r="0.55">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pink" cx="1" cy="0.45" r="0.4">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" stroke="#94a3b8" stroke-opacity="0.06" fill="none"/>
+    </pattern>
+    <filter id="glow1" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="glow2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="800" fill="url(#base)"/>
+  <rect width="1920" height="800" fill="url(#grid)"/>
+
+  <ellipse cx="1420" cy="180" rx="620" ry="420" fill="url(#cyan)"/>
+  <ellipse cx="1620" cy="660" rx="680" ry="460" fill="url(#violet)"/>
+  <ellipse cx="1850" cy="380" rx="520" ry="360" fill="url(#pink)"/>
+
+  <g opacity="0.85">
+    <g filter="url(#glow1)">
+      <circle cx="1330" cy="200" r="90" fill="url(#hub)" opacity="0.35"/>
+    </g>
+    <g filter="url(#glow2)">
+      <circle cx="1560" cy="540" r="70" fill="url(#hub)" opacity="0.3"/>
+    </g>
+  </g>
+
+  <g stroke="url(#hub)" stroke-width="2">
+    <path d="M740 120 C860 160 860 240 740 280 S622 220 740 200" opacity="0.55" fill="none"/>
+    <path d="M760 96 C900 144 900 244 760 304 S600 230 756 206" opacity="0.25" fill="none"/>
+  </g>
+
+  <g opacity="0.35">
+    <circle cx="930" cy="180" r="7" fill="#22d3ee"/>
+    <circle cx="880" cy="230" r="4" fill="#a78bfa"/>
+    <circle cx="1010" cy="228" r="5" fill="#f472b6"/>
+    <circle cx="952" cy="150" r="4" fill="#22d3ee"/>
+    <circle cx="900" cy="300" r="3" fill="#a78bfa"/>
+  </g>
+
+  <g font-family="'Consolas','Courier New',monospace" font-size="15">
+    <text x="1100" y="360" fill="#22d3ee" opacity="0.5">&lt;/&gt;</text>
+    <text x="1120" y="388" fill="#a78bfa" opacity="0.35">{"{"}</text>
+    <text x="1120" y="412" fill="#64748b" opacity="0.5">fullStack: true,</text>
+    <text x="1120" y="436" fill="#94a3b8" opacity="0.45">sre: enabled</text>
+    <text x="1120" y="460" fill="#a78bfa" opacity="0.35">{"}"}</text>
+  </g>
+
+  <path d="M1250 612 L1290 560 L1330 612 Z" fill="url(#hub)" opacity="0.16"/>
+  <path d="M1426 600 L1470 548 L1514 600 Z" fill="url(#hub)" opacity="0.12"/>
+  <rect x="1680" y="120" width="130" height="130" rx="18" fill="url(#hub)" opacity="0.08" transform="rotate(14 1745 185)"/>
+  <rect x="1730" y="560" width="80" height="80" rx="16" fill="url(#hub)" opacity="0.1"/>
+
+  <circle cx="1240" cy="130" r="2.5" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="1440" cy="90" r="2" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="1760" cy="260" r="2.5" fill="#f472b6" opacity="0.5"/>
+  <circle cx="1880" cy="90" r="2" fill="#22d3ee" opacity="0.45"/>
+</svg>
