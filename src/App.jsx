@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
   const [dark, setDark] = useState(true);
@@ -26,6 +26,7 @@ export default function App() {
 
   return <>
     <Navbar />
+    <SpeedInsights />
     <button className="theme-toggle" aria-label="Toggle theme" onClick={() => setDark(!dark)}>
       {dark ? <Sun size={18} /> : <Moon size={18} />}
     </button>
