@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-
 /* ─── VARIABLES ─── */
 :root {
   --font: "Inter", system-ui, -apple-system, sans-serif;
@@ -304,8 +302,16 @@ button, input, textarea { font: inherit; outline: none; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-bg-overlay {

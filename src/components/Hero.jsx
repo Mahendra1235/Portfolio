@@ -1,17 +1,28 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/content";
-import heroBg from "../assets/hero.png";
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0, transition: { duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] } },
 });
 
+const heroCdnUrl = (w) => `/.netlify/images?url=/hero.png&w=${w}&fm=avif&q=80`;
+
 export default function Hero() {
   return (
     <section id="home" className="hero section">
-      <div className="hero-bg" style={{ backgroundImage: `url(${heroBg})` }}>
+      <div className="hero-bg">
+        <img
+          src={heroCdnUrl(1200)}
+          srcSet={`${heroCdnUrl(400)} 400w, ${heroCdnUrl(800)} 800w, ${heroCdnUrl(1200)} 1200w`}
+          sizes="100vw"
+          width={1934}
+          height={813}
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+        />
         <div className="hero-bg-overlay" />
       </div>
       <div className="hero-copy">
